@@ -27,10 +27,6 @@ class Solution {
         {
             if(st.size() == 1 && st.peek() == null) break;
 
-            for(int i=0; i<100; i++)
-            {
-                
-            }
 
             if(st.size() >=2 && st.peek() == null)
             {
