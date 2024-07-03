@@ -15,51 +15,39 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        
-        //creating arraylist that store the answer.
+         //arraylist to store the answer.
         List<Integer> ans = new ArrayList<>();
-
-        //creating stack 
-        Stack<TreeNode> st = new Stack<>();
-        st.push(root);
-
-        while(st.size() > 0)
+        
+        TreeNode curr = root;
+        
+        while(curr != null)
         {
-            if(st.size() == 1 && st.peek() == null) break;
-
-
-            if(st.size() >=2 && st.peek() == null)
+            if(curr.left == null)
             {
-                //pop.
-                st.pop();
-
-                //pop agaig and added to arraylist.
-                TreeNode popElement = st.pop();
-
-                ans.add(popElement.val);
-
+                ans.add(curr.val);
                 //going to right.
-                st.push(popElement.right);
+                curr = curr.right;
             }
-            else if(st.peek()!= null && st.peek().left != null)
+            else
             {
-                //push to arraylist.
-                st.push(st.peek().left);
-
-            }
-            else if(st.peek()!= null && st.peek().left == null)
-            {
-                //pop.
-                TreeNode popElement = st.pop();
-
-                //print.
-                ans.add(popElement.val);
-
-                //going to right.
-                st.push(popElement.right);
+                //right to left subtree almost right.
+                TreeNode leftSubtree  = curr.left;
+                
+                while(leftSubtree.right != null) 
+                {
+                    leftSubtree = leftSubtree.right;
+                }
+                
+                //making the thread.
+                leftSubtree.right = curr;
+                
+                //store this current in the temp 
+                TreeNode temp = curr;
+                curr = curr.left;
+                temp.left = null;
             }
         }
-
+        
         return ans;
     }
 }
