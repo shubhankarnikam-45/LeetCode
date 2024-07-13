@@ -1,25 +1,25 @@
 class Solution {
     public int maxProduct(int[] nums) {
-        int n = nums.length;
-    long leftProduct = 1;
-    long rightProduct = 1;
-    long ans = nums[0];
+        
+        long prefixSum = 1;
+        long suffixSum = 1;
 
-    for (int i = 0; i < n; i++) {
+        long ans = Integer.MIN_VALUE;
 
-      //if any of leftProduct or rightProduct become 0 then update it to 1
-      leftProduct = (leftProduct == 0 || leftProduct < Integer.MIN_VALUE) ? 1 : leftProduct;
-      rightProduct = (rightProduct == 0 || rightProduct < Integer.MIN_VALUE) ? 1 : rightProduct;
+        int n= nums.length;
+        for(int i=0; i<n; i++)
+        {
+            prefixSum = (prefixSum == 0 || prefixSum < Integer.MIN_VALUE) ? 1 : prefixSum;
+      suffixSum = (suffixSum == 0 || suffixSum < Integer.MIN_VALUE) ? 1 : suffixSum;
 
-      //prefix product
-      leftProduct *= nums[i];
+            prefixSum *= nums[i];
+            suffixSum *= nums[n-i-1];
 
-      //suffix product
-      rightProduct *= nums[n - 1 - i];
+            ans = Math.max(ans, Math.max(prefixSum, suffixSum));
 
-      ans = Math.max(ans, Math.max(leftProduct, rightProduct));
-    }
+        }
 
-    return (int) ans;
+        
+        return (int) ans;
     }
 }
