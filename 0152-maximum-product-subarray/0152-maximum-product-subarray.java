@@ -10,8 +10,9 @@ class Solution {
         for(int i=0; i<n; i++)
         {
             prefixSum = (prefixSum == 0 || prefixSum < Integer.MIN_VALUE) ? 1 : prefixSum;
-      suffixSum = (suffixSum == 0 || suffixSum < Integer.MIN_VALUE) ? 1 : suffixSum;
+            suffixSum = (suffixSum == 0 || suffixSum < Integer.MIN_VALUE) ? 1 : suffixSum;
 
+        
             prefixSum *= nums[i];
             suffixSum *= nums[n-i-1];
 
