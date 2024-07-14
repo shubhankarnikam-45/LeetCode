@@ -1,36 +1,28 @@
 class Solution {
     public int maxProfit(int[] prices) {
+        
 
-        //size.
         int n = prices.length;
 
-        //suffixMax
-        int suffixMaxArr[]  = new int[n];
+        int msf = prices[0];
 
-        int max = Integer.MIN_VALUE;
+        int a = 0;
 
-        //moving in backward direction and create the prefix aray.
-        for(int i=n-1; i>=0; i--)
+        for(int i=1;i< n; i++)
         {
-            if(prices[i] > max)
+            //current.
+            int ce = prices[i];
+
+            if(ce > msf)
             {
-                max = prices[i];
+                a  = Math.max(a, ce - msf);
             }
-            suffixMaxArr[i] = max;
-
+            else if(ce < msf)
+            {
+                msf = ce;
+            }
         }
 
-        //variable that store the maximum profit.
-        int maxProfit = Integer.MIN_VALUE;
-        //moving in forward direction and calculate the max
-        for(int i=0; i<n; i++)
-        {
-            int diff = suffixMaxArr[i] - prices[i];
-            maxProfit = Math.max(maxProfit, diff);
-        }
-
-        //return answer.
-        //final answer.
-        return maxProfit;
+        return a;
     }
 }
