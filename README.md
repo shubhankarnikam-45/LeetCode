@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0394-decode-string](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0394-decode-string) |
 ## Tree
 |  |
 | ------- |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
+| [0394-decode-string](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0394-decode-string) |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
 ## Sorting
 |  |
@@ -89,4 +91,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
+## Recursion
+|  |
+| ------- |
+| [0394-decode-string](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0394-decode-string) |
 <!---LeetCode Topics End-->
