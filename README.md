@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0050-powx-n) |
 | [0070-climbing-stairs](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0070-climbing-stairs) |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
 ## Greedy
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0050-powx-n) |
 | [0394-decode-string](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0394-decode-string) |
 ## Sliding Window
 |  |
