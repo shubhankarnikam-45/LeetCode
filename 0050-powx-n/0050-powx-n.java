@@ -1,27 +1,19 @@
 class Solution {
+
+    public double solve(double x, long n)
+    {
+        if(n == 0) return 1;
+
+        //if n is -ve.
+        if(n < 0) return solve(1/x, -n);
+
+        if(n % 2 == 0) return solve(x * x, n/2); //even case.
+        
+        return x * solve(x * x, (n-1)/2);
+    
+    }
     public double myPow(double x, int n) {
-        double ans = 1;
-        double oriNum = n;
-        if(x == 0 || x == 1) return x;
-
-        if(n < 0){
-            x = 1/x;
-            n = -(n+1);    //for Integer.MIN_VALUE
-            ans = ans * x;
-        }
-
-     
-        while(n > 0) {
-            if(n % 2 == 1) {
-                ans = ans * x;
-                n = n-1;
-            }
-            else {
-                n = n/2;
-                x = x * x;
-            }
-        }
-
-        return ans;
+        
+        return solve(x, (long)n);
     }
 }
