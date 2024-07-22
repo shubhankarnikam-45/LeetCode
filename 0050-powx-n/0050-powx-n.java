@@ -1,19 +1,34 @@
 class Solution {
-
-    public double solve(double x, long n)
-    {
-        if(n == 0) return 1;
-
-        //if n is -ve.
-        if(n < 0) return solve(1/x, -n);
-
-        if(n % 2 == 0) return solve(x * x, n/2); //even case.
-        
-        return x * solve(x * x, (n-1)/2);
-    
-    }
     public double myPow(double x, int n) {
         
-        return solve(x, (long)n);
+        long m = n;
+        long temp = m;
+        m = Math.abs(m);
+
+        double ans = 1.0;
+
+        while( m > 0)
+        {
+            if(m % 2 == 0)
+            {
+                //even.
+                x = x * x;
+                m = m/2;
+            }
+            else
+            {
+                //odd.
+                ans*=x;
+                m = (m-1);
+            }
+        }
+
+        if(temp < 0)
+        {
+            return 1.0/ans;
+        }
+
+        return ans;
+
     }
 }
