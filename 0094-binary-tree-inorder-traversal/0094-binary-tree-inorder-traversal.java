@@ -15,39 +15,29 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-         //arraylist to store the answer.
+        
         List<Integer> ans = new ArrayList<>();
-        
-        TreeNode curr = root;
-        
-        while(curr != null)
+
+        Stack<TreeNode> stack = new Stack<>();
+
+        TreeNode node = root;
+
+        while(true)
         {
-            if(curr.left == null)
+            if(node != null)
             {
-                ans.add(curr.val);
-                //going to right.
-                curr = curr.right;
+                stack.push(node);
+                node = node.left;
             }
             else
             {
-                //right to left subtree almost right.
-                TreeNode leftSubtree  = curr.left;
-                
-                while(leftSubtree.right != null) 
-                {
-                    leftSubtree = leftSubtree.right;
-                }
-                
-                //making the thread.
-                leftSubtree.right = curr;
-                
-                //store this current in the temp 
-                TreeNode temp = curr;
-                curr = curr.left;
-                temp.left = null;
+                if(stack.size() == 0) break;
+                node = stack.pop();
+                ans.add(node.val);
+                node = node.right;
             }
         }
-        
+
         return ans;
     }
 }
