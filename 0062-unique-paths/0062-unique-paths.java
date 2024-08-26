@@ -27,18 +27,20 @@ class Solution {
     }
     public int uniquePaths(int m, int n) {
 
-        
-        
-        //creted the 2d array.
-        boolean grid[][] = new boolean[m][n];
         int dp[][] = new int[m][n];
+        dp[m-1][n-1] = 1;
 
-        for(int [] arr : dp)
+        for(int row = m-1; row>=0; row --)
         {
-            Arrays.fill(arr, -2);
-        }
+            for(int col = n-1; col>=0; col--)
+            {
+                int down = (row + 1 < m )?(dp[row + 1][col]):(0);
+                int right = (col + 1 < n)?(dp[row][col + 1]):(0);
 
-        dp[0][0] = uniquePathHelper(grid, dp, 0, 0, m, n);
+                if( ! (row ==  m-1 && col == n-1))
+                dp[row][col] = down + right;
+            }
+        }
 
         return dp[0][0];
     }
