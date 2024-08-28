@@ -27,21 +27,28 @@ class Solution {
     }
     public int uniquePaths(int m, int n) {
 
-        int dp[][] = new int[m][n];
-        dp[m-1][n-1] = 1;
+        int dp[] = new int[n];
+        dp[n-1] = 1;
 
         for(int row = m-1; row>=0; row --)
         {
+        
+            int temp []= new int[n];
+            if( row == m-1)
+            temp[n-1] = 1;
+
             for(int col = n-1; col>=0; col--)
             {
-                int down = (row + 1 < m )?(dp[row + 1][col]):(0);
-                int right = (col + 1 < n)?(dp[row][col + 1]):(0);
+                int down = (row + 1 < m )?(dp[col]):(0);
+                int right = (col + 1 < n)?(temp[col + 1]):(0);
 
                 if( ! (row ==  m-1 && col == n-1))
-                dp[row][col] = down + right;
+                temp[col] = down + right;
             }
+
+            dp = temp;
         }
 
-        return dp[0][0];
+        return dp[0];
     }
 }
