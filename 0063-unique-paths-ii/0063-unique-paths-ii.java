@@ -33,6 +33,27 @@ class Solution {
             Arrays.fill(arr, -11);
         } 
 
-        return fun(n-1, m-1, obstacleGrid, dp);
+        // return fun(n-1, m-1, obstacleGrid, dp);
+
+        if(obstacleGrid[n-1][m-1] == 1) return 0;
+        for(int i=0; i<n; i++)
+        {
+            for(int j=0; j<m; j++)
+            {
+
+                if(i == 0 && j == 0) 
+                {
+                    dp[i][j] = 1; 
+                    continue;
+                }
+                
+                int left = (j-1 >= 0 && obstacleGrid[i][j-1] != 1)?( dp[i][j-1]):(0);
+                int up = (i-1 >= 0 && obstacleGrid[i-1][j] != 1)?(dp[i-1][j]):(0);
+
+                dp[i][j] = left + up;
+            }
+        }
+
+        return dp[n-1][m-1];
     }
 }
