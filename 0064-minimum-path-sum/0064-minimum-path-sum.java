@@ -20,31 +20,35 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
 
-        int dp[][] = new int[m][n];
+        int dp[] = new int[n];
         
 
         // return fun(m-1, n-1, grid, dp);
 
         for(int i=0; i<m; i++)
         {
+            int cur[] = new int[n];
+
             for(int j=0; j<n; j++)
             {
                 if(i == 0 && j == 0)
                 {
-                    dp[i][j] = grid[i][j];
+                    cur[j] = grid[i][j];
                     continue;
                 }
                 
-                int up = (i-1 >= 0) ? (dp[i-1][j]) : (100000);
-                int left = (j-1 >= 0) ? (dp[i][j-1]) : (100000);
+                int up = (i-1 >= 0) ? (dp[j]) : (100000);
+                int left = (j-1 >= 0) ? (cur[j-1]) : (100000);
 
                 int candidate = grid[i][j] + Math.min(up, left);
-                dp[i][j] = candidate;
+                cur[j]= candidate;
             }
+
+            dp = cur;
         }
 
         
 
-        return dp[m-1][n-1];
+        return dp[n-1];
     }
 }
