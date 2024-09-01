@@ -18,12 +18,36 @@ class Solution {
     }
     public int minimumTotal(List<List<Integer>> triangle) {
         
-        List<List<Integer>> dp =new ArrayList<>();
+        ArrayList<ArrayList<Integer>> dp =new ArrayList<>();
         for(int i=0 ;i< triangle.size(); i++)
         {
             dp.add(new ArrayList<Integer>());
         }
 
-        return fun(0, 0, triangle, dp);
+        // return fun(0, 0, triangle, dp);
+
+        // ArrayList<Integer> alist = dp.get(dp.size() -1);
+
+        for(Integer num : triangle.get(triangle.size()-1))
+        {
+            dp.get(dp.size()-1).add(num);
+        }
+
+        // dp.get(triangle.size()-1).add(alist);
+
+        for(int i=dp.size()-2; i>=0; i--)
+        {
+            for(int j=0; j<i+1; j++)
+            {
+                int idx =  dp.get(i + 1).get(j);
+                int idxp1 =  dp.get(i + 1).get(j + 1);
+
+                int candidate = triangle.get(i).get(j) + Math.min(idx , idxp1);
+
+                dp.get(i).add(candidate);
+            }
+        }
+
+        return dp.get(0).get(0);
     }
 }
