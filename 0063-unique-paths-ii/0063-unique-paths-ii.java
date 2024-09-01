@@ -27,7 +27,7 @@ class Solution {
         int m  = obstacleGrid[0].length;
 
          int dp[][] = new int[n][m];
-
+         
         for(int arr[] : dp)
         {
             Arrays.fill(arr, -11);
