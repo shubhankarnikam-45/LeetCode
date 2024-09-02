@@ -1,25 +1,22 @@
 class Solution {
 
-    public boolean fun(int idx, int arr[], int curSum, int sum, int dp[][])
+   public boolean fun(int idx, int arr[],  int target, int dp[][])
     {
-        if(curSum == sum) return true;
         
-        //base case.
-        if(idx == 0) return curSum+arr[idx] == sum - arr[idx];
+        if(target == 0) return true;   
+        
+        if(idx == 0) return arr[0] == target;
+        
+        if(dp[idx][target] != -1) return dp[idx][target] == 1;
 
-        if(dp[idx][curSum] != -1) return dp[idx][curSum] == 1;
+        boolean no = fun(idx - 1, arr, target, dp);        
+        boolean yes = false;
+        if(arr[idx] <= target)
+        yes = fun(idx - 1 , arr, target - arr[idx],  dp);
 
-        boolean exclude = fun(idx - 1, arr, curSum, sum, dp);
-        boolean include = false;
-        if(curSum < sum)
-        {
-            include = fun(idx - 1,arr, curSum + arr[idx], sum - arr[idx], dp);
-        }
-
-        int result = (exclude || include) ? (1) : (0);
-
-        dp[idx][curSum] = result;
-
+        
+        int result = (yes || no) ? (1) : (0);
+        dp[idx][target] = result;
         return result == 1;
     }
     public boolean canPartition(int[] nums) {
@@ -29,10 +26,15 @@ class Solution {
        for(int i=0; i<nums.length; i++)
        sum+=nums[i];
 
+       if(sum %2 == 1) return false;
+
+       sum = sum / 2;
+
        int dp[][] = new int[nums.length][sum+1];
        for(int arr[] : dp)
        Arrays.fill(arr, -1);
 
-       return fun(nums.length-1, nums, 0, sum, dp); 
+       return fun(nums.length-1, nums, sum, dp); 
+     
     }
 }
