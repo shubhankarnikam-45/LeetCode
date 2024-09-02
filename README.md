@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
+| [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Binary Search
 |  |
@@ -49,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0152-maximum-product-subarray](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
+| [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 ## Matrix
 |  |
 | ------- |
