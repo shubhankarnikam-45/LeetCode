@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Binary Search
 |  |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 ## Matrix
 |  |
 | ------- |
@@ -133,4 +135,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
+## Backtracking
+|  |
+| ------- |
+| [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 <!---LeetCode Topics End-->
