@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
+| [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Binary Search
 |  |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0063-unique-paths-ii](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0064-minimum-path-sum) |
+| [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Prefix Sum
 |  |
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
+| [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
 ## Backtracking
 |  |
 | ------- |
