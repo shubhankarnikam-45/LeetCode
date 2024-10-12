@@ -6,28 +6,39 @@ class Solution {
         int m = t.length();
 
         int dp[][] = new int[n + 1][m + 1];
+
+        int prev[] = new int[m + 1];
+        int cur[] = new int[m + 1];
         
         //first we wriet down the base cases.
-        for(int ind1 = 1; ind1 <=n; ind1++) dp[ind1][0] = ind1;
-        for(int ind2 = 1; ind2 <=m; ind2++) dp[0][ind2] = ind2;
+        // for(int ind1 = 1; ind1 <=n; ind1++) dp[ind1][0] = ind1;
+        for(int ind2 = 1; ind2 <=m; ind2++) prev[ind2] = ind2;
 
         //tabulation.
         for(int ind1 = 1; ind1 <=n; ind1++)
         {
-            for(int ind2 = 1; ind2<=m; ind2++)
+            for(int ind2 = 0; ind2<=m; ind2++)
             {
+                if(ind2 == 0)
+                {
+                    cur[0] = ind1;
+                    continue;
+                }
+
                 //if character matches.
                 if(s.charAt(ind1 - 1) == t.charAt(ind2 - 1))
                 {
-                    dp[ind1][ind2] = dp[ind1 - 1][ind2 - 1];
+                    cur[ind2] = prev[ind2 - 1];
                 }
                 else
                 {
-                    dp[ind1][ind2] =  1 + Math.min(dp[ind1][ind2-1], Math.min(dp[ind1 - 1][ind2 - 1], dp[ind1 -1 ][ind2]));
+                    cur[ind2] =  1 + Math.min(cur[ind2-1], Math.min(prev[ind2 - 1], prev[ind2]));
                 }
             }
+
+            prev = cur.clone();
         }
 
-        return dp[n][m];
+        return prev[m];
     }
 }
