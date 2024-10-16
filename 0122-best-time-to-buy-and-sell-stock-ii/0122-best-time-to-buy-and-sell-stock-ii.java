@@ -4,12 +4,14 @@ class Solution {
         
         //creating dp 2d array to store the duplicate values.
         int n = prices.length;
-        int dp[][] = new int[n + 1][2];
-
-        //TABULATION.
+        
+        //SPACE OPTIMIZATION.
         
         //write the base case.
-        dp[n][1] = dp[n][0] = 0;
+        int ahead[] = new int[2];
+        int cur[] = new int[2];
+
+
 
         //travel and solve
         for(int ind = n - 1; ind>=0; ind--)
@@ -18,17 +20,18 @@ class Solution {
             {
                 if(buy == 1) //buy
                 {
-                    dp[ind][buy] = Math.max(-prices[ind] + dp[ind + 1][0], 0 + dp[ind + 1][1]);
+                    cur[buy] = Math.max(-prices[ind] + ahead[0], 0 + ahead[1]);
                 }
                 else //sell
                 {
-                    dp[ind][buy] = Math.max(prices[ind] + dp[ind + 1][1], 0 + dp[ind + 1][0]);
+                    cur[buy] = Math.max(prices[ind] + ahead[1], 0 + ahead[0]);
 
                 }
             }
+
+            ahead = cur.clone();
         }
 
-      
-        return dp[0][1];
+        return ahead[1];
     }
 }
