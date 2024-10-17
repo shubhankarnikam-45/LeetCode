@@ -24,9 +24,31 @@ class Solution {
     public int maxProfit(int k, int[] prices) {
         
         int n = prices.length;
-        int dp[][] = new int[n][k * 2];
+        int after[] = new int[k * 2 + 1];
+        int cur[] = new int[k * 2 + 1];
 
-        for(int arr[] : dp) Arrays.fill(arr, -1);
-        return fun(0, 0, k, prices, dp);
+        //TABULATION.
+
+        for(int ind = n - 1;ind>=0; ind--)
+        {
+            for(int transNo = k * 2 -1 ; transNo >=0; transNo--)
+            {
+                int profit = 0;
+
+                        if(transNo % 2 == 0) //even ==> Buy
+                        {
+                            profit = Math.max(-prices[ind] + after[transNo + 1] , 0 + after[transNo]);
+                        }
+                        else //odd ==> Sell
+                        {
+                            profit = Math.max(prices[ind] + after[transNo + 1], 0 + after[ transNo]);
+                        }
+
+                        cur[transNo] = profit;
+            }
+
+            after = cur.clone();
+        }
+        return after[0];
     }
 }
