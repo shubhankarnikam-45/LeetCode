@@ -5,7 +5,9 @@ class Solution {
         int n = prices.length;
 
         //creating the 3d dp to optimize this.
-        int dp[][][] = new int[n + 1][2][3];
+        int after[][] = new int[2][3];
+        int cur[][] = new int[2][3];
+
         
       
 
@@ -20,21 +22,23 @@ class Solution {
 
                     if(buy == 1) //buy
                     {
-                    profit = Math.max(-prices[ind] + dp[ind + 1] [0][cap] , 0 + dp[ind + 1][1][cap]);   
+                    profit = Math.max(-prices[ind] + after [0][cap] , 0 + after[1][cap]);   
                     }
                     else //sell
                     {
-                        profit = Math.max(prices[ind] + dp[ind + 1][1][cap - 1], 0 + dp[ind + 1][0][cap]);
+                        profit = Math.max(prices[ind] + after[1][cap - 1], 0 + after[0][cap]);
                     }
 
-                    dp[ind][buy][cap] = profit;
+                    cur[buy][cap] = profit;
 
                 }
+
+                after = cur.clone();
             }
         }
 
         
 
-        return dp[0][1][2];
+        return after[1][2];
     }
 }
