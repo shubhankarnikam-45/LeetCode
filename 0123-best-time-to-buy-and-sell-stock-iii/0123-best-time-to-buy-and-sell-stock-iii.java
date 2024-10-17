@@ -26,13 +26,13 @@ class Solution {
         int n = prices.length;
 
         //creating the 3d dp to optimize this.
-        int dp[][][] = new int[n][2][2];
+        int dp[][][] = new int[n][2][3];
         
         for(int i=0; i<n; i++)
         {
             for(int j=0; j<2; j++)
             {
-                for(int k=0; k<2; k++)
+                for(int k=0; k<3; k++)
                 {
                     dp[i][j][k] = -1;
                 }
