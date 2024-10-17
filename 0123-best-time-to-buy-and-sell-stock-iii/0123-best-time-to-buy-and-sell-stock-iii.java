@@ -26,21 +26,36 @@ class Solution {
         int n = prices.length;
 
         //creating the 3d dp to optimize this.
-        int dp[][][] = new int[n][2][3];
+        int dp[][][] = new int[n + 1][2][3];
         
-        for(int i=0; i<n; i++)
+      
+
+
+        for(int ind = n -1; ind >= 0; ind--)
         {
-            for(int j=0; j<2; j++)
+            for(int buy = 0; buy<=1; buy++)
             {
-                for(int k=0; k<3; k++)
+                for(int cap = 1; cap <= 2; cap++)
                 {
-                    dp[i][j][k] = -1;
+                    int profit = 0;
+
+                    if(buy == 1) //buy
+                    {
+                    profit = Math.max(-prices[ind] + dp[ind + 1] [0][cap] , 0 + dp[ind + 1][1][cap]);   
+                    }
+                    else //sell
+                    {
+                        profit = Math.max(prices[ind] + dp[ind + 1][1][cap - 1], 0 + dp[ind + 1][0][cap]);
+                    }
+
+                    dp[ind][buy][cap] = profit;
+
                 }
             }
         }
 
         
 
-        return fun(0, 1, 0, prices, dp);
+        return dp[0][1][2];
     }
 }
