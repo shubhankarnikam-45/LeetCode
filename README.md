@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 | [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Binary Search
 |  |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## Matrix
 |  |
 | ------- |
@@ -82,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0141-linked-list-cycle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## String
 |  |
 | ------- |
@@ -91,12 +94,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0394-decode-string) |
 | [0516-longest-palindromic-subsequence](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
 ## Sorting
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -117,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0141-linked-list-cycle) |
+| [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## Math
 |  |
 | ------- |
