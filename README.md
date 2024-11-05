@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0048-rotate-image](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0120-triangle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0120-triangle) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0064-minimum-path-sum) |
 | [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
@@ -126,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0070-climbing-stairs) |
