@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0152-maximum-product-subarray](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
+| [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## Math
 |  |
@@ -141,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0070-climbing-stairs) |
+| [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
 ## Greedy
 |  |
