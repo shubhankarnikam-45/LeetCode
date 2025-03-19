@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -96,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0141-linked-list-cycle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## String
 |  |
@@ -113,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## Divide and Conquer
 |  |
@@ -144,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 | [3055-maximum-odd-binary-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/3055-maximum-odd-binary-number) |
 ## Greedy
 |  |
@@ -177,4 +182,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
