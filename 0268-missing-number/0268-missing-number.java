@@ -1,20 +1,21 @@
 class Solution {
-    public int missingNumber(int[] a) {
+    public int missingNumber(int[] nums) {
+        
+        //size of array.
+        int n = nums.length;
 
-        int N = a.length;
-        //loop from 1 to n and then check in array.
-        //this is brute force approach.
-        for(int i=0; i<=N; i++)
+        //sum of n element.
+        int sumOfNElement = (n * (n+1))/2;
+
+        //varaible that store the tatal sum in array.
+        int sum = 0;
+
+        //now i traverse in the nums array and find answer.
+        for(int i=0; i<nums.length; i++)
         {
-            int j = 0;
-            for(;j<a.length; j++)
-            {
-                if(a[j] == i) break;
-            }
-
-            if(j == a.length) return i;
+            sum += nums[i];
         }
 
-        return -1;
+        return sumOfNElement - sum;
     }
 }
