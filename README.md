@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0322-coin-change) |
 | [0377-combination-sum-iv](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0416-partition-equal-subset-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0485-max-consecutive-ones](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 | [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
