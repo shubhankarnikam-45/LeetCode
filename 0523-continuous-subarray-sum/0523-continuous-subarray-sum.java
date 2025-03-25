@@ -1,26 +1,38 @@
 class Solution {
-    public boolean checkSubarraySum(int[] nums, int k) {
+    public boolean checkSubarraySum(int[] nums, int k) 
+    {
+        //size of array.
         int n = nums.length;
 
-      
-        Map<Integer, Integer> mp = new HashMap<>();
-        mp.put(0, -1);
-        
+        //we store the current sum.
         int sum = 0;
-        
-        for (int i = 0; i < n; i++) {
+
+        //hashmap.
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+
+        //traverse array.
+        for(int i = 0; i<n; i++)
+        {
+            //store sum each time.
             sum += nums[i];
-            
+
+            //remainder.
             int remainder = sum % k;
-            
-            if (mp.containsKey(remainder)) {
-                if (i - mp.get(remainder) >= 2) {
-                    return true;
-                }
-            } else {
-                mp.put(remainder, i);
+
+            //if in hashmap remainder exists then we return true.
+            if(map.containsKey(remainder))
+            {
+                if(i - map.get(remainder) >=2) return true;
+
             }
+            else
+                map.put(remainder, i);
+            
+            
         }
+
+        //here we reach that means their is not subarray.
         return false;
     }
 }
