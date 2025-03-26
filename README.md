@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0494-target-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0494-target-sum) |
 | [0523-continuous-subarray-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0523-continuous-subarray-sum) |
+| [1016-subarray-sums-divisible-by-k](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1036-rotting-oranges](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1036-rotting-oranges) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0523-continuous-subarray-sum) |
+| [1016-subarray-sums-divisible-by-k](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/shubhankarnikam-45/LeetCode/tree/master/2508-maximum-sum-of-an-hourglass) |
 ## Hash Table
 |  |
@@ -104,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0268-missing-number) |
 | [0523-continuous-subarray-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0523-continuous-subarray-sum) |
+| [1016-subarray-sums-divisible-by-k](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
 ## String
 |  |
