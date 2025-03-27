@@ -1,40 +1,39 @@
 class Solution {
     public int subarraysDivByK(int[] nums, int k) {
-       //length of the array.
-       int n = nums.length;
+        
+        //here we store the total count of subaray.
+        int count = 0;
 
-       //crating the hashmap.
-       HashMap<Long, Integer> map = new HashMap<>();
-       map.put(0l, 1);
+        //length of array.
+        int n = nums.length;
 
-       //creating variable that stores the sum.
-       long sum  = 0;
+        //creating hashmap to store the <remainder, countOfRemainder>
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
 
-       //here we store the count.
-       int count = 0;
+        //to store the current sum.
+        int sum = 0;
 
-       //traverse array and find answer.
-       for(int i = 0; i<n; i++)
-       {
-            //here we store sum each time of iteration.
+        for(int i=0; i<n; i++)
+        {
+            //each we sum to current element.
             sum += nums[i];
 
-            long remainder = sum % k;
-            if (remainder < 0) remainder += k;
+            //remainder
+            int remainder = sum % k;
 
+            //if remainder is negative 
+            // convert to positve (0 <= remainder < k)
+            if(remainder < 0) remainder +=k;
+
+            //if in hashmap current key is present then it's freq added to count variable.
+            if(map.containsKey(remainder)  == true) count += map.get(remainder);
             
-            if(map.containsKey(remainder) ==  true )
-            {
-                count += map.get(remainder);
-            }
+            //each time we put frequency of remainder.
+            map.put(remainder, map.getOrDefault(remainder, 0) + 1);
+        }
 
-            map.put(remainder, map.getOrDefault(remainder, 0)+1);
-       }
-
-       //return the answer.
-       return count;
-
+        //at last we just return the answer.
+        return count;
     }
 }
-
-
