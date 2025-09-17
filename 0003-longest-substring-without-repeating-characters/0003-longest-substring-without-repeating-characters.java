@@ -1,42 +1,31 @@
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        //required two pointer left and right which equals to 0.
-        int left=0;
-        int right=0;
+        
+        //crearting hashset to perfor ongoing operaton.
+        HashSet<Character> hset = new HashSet<>();
 
-        //length
-        int n=s.length();
+        //creating ans variable to return.
+        int ans = 0;
 
-        //hashmap for storing character and it's frequency.
-        HashMap<Character,Integer>hmap=new HashMap<>();
-
-        //for storing final answer.
-        int len=0;
-
-        while(right<n)
+        //travese string and find the answer.
+        for(int j=0 ;j<s.length();j++)
         {
-            //current character 
-            char ch=s.charAt(right);
+            for(int i=j; i<s.length(); i++)
+                {
+                    if(hset.contains(s.charAt(i)))
+                    {
+                        ans = Math.max(ans, hset.size());
+                        hset.clear();
+                        break;
+                    }
 
-            //if this character is contains in hmap.
-            //then do something.
-            if(hmap.containsKey(ch)==true)
-            {
-                left=Math.max(hmap.get(ch)+1,left);
-            }
-
-            //everytime we put current character in the hashmap.
-            hmap.put(ch,right);
-
-            //calculate len
-            len=Math.max(len,right-left+1);
-
-
-            right++;
+                    // if(s.charAt(i) >= 'a' && s.charAt(i)<='z' || s.charAt(i)== ' ')
+                    hset.add(s.charAt(i));
+                }
+                
         }
+        ans = Math.max(ans, hset.size());
 
-
-        //return answer.
-        return len;
+        return ans;
     }
 }
