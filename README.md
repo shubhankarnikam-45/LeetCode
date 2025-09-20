@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0062-unique-paths](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0064-minimum-path-sum) |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0072-edit-distance](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0242-valid-anagram](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0242-valid-anagram) |
@@ -148,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0141-linked-list-cycle](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0189-rotate-array](https://github.com/shubhankarnikam-45/LeetCode/tree/master/0189-rotate-array) |
 | [1129-longest-string-chain](https://github.com/shubhankarnikam-45/LeetCode/tree/master/1129-longest-string-chain) |
