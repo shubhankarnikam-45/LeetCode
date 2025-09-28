@@ -55,13 +55,10 @@ class Solution {
             //extract the top value of stack.
             Pair top = stack.peek();
 
-            if(top.ep >= pair[i].sp && top.ep <= pair[i].ep)
+            if(top.ep >= pair[i].sp)
             {
-                top.ep = pair[i].ep;
-            }
-            else if(top.ep >=pair[i].sp && top.ep >= pair[i].ep)
-            {
-                
+                top.sp = Math.min(top.sp, pair[i].sp);
+                top.ep = Math.max(top.ep, pair[i].ep);
             }
             else
             {
